@@ -18,11 +18,13 @@ def Param():
  
     ## Flag
     flags.DEFINE_boolean("is_3D",         False,        "True for train the 3D module")
+    flags.DEFINE_boolean("is_train",      True,         "True for train")
 
     ## Plotting
     flags.DEFINE_boolean("plot",          True,         "True for ploting figures")
     flags.DEFINE_boolean("load_model",    False,        "True for load model")
 
+    flags.DEFINE_string("method",         "A3C",        "A3C, DQN")
 
     ## dir path
     flags.DEFINE_string("checkpoint_dir",  "checkpoint",   "model path")
